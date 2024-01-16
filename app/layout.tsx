@@ -1,4 +1,4 @@
-import { lato } from './ui/fonts';
+import { lato, lusitana } from './ui/fonts';
 import './ui/global.css'
 
 export default function RootLayout({
@@ -8,9 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.className} antialiased`}>
+      <body className={`${lusitana.style} antialiased`}>
         {children}
-        <footer className='w-full bg-[#222] text-lg p-5 text-white text-center'>
+        <footer className='w-full bg-[#181717] text-lg p-5 text-white text-center'>
           Esto es el footer
         </footer>
       </body>
