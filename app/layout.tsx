@@ -1,5 +1,5 @@
 import { lato, lusitana } from './ui/fonts';
-import './ui/global.css'
+import './ui/global.css';
 
 export default function RootLayout({
   children,
@@ -8,9 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lusitana.style} antialiased`}>
-        {children}
-      </body>
+      <body className={`${lusitana.style} antialiased`}>{children}</body>
     </html>
   );
 }
