@@ -4,6 +4,12 @@ import Link from 'next/link';
 import styles from './ui/home.module.css';
 import { montserrat } from './ui/fonts';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+};
+
 
 export default function Page() {
   return (

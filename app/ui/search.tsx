@@ -13,10 +13,13 @@ export default function Search({ placeholder }: { placeholder: string }) {
 
   const handleSearch = useDebouncedCallback((term: string) => {
     console.log(`Searching... ${term}`);
+
+    //accessing the query string of the URL
     const params = new URLSearchParams(searchParams.toString());
 
     params.set('page', '1');
 
+    // if the search term is not empty, add it to the query string
     if (term) {
       params.set('query', term);
     } else {
