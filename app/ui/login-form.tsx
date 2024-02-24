@@ -18,7 +18,7 @@ export default function LoginForm() {
     <form action={dispatch} className="space-y-3">
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
         <h1 className={`${lusitana.className} mb-3 text-2xl`}>
-          k Please log in to continue
+          Please log in to continue
         </h1>
         <p>
           user: <span className="text-blue-500">user@nextmail.com</span>
